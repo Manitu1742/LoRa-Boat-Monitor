@@ -4,7 +4,7 @@
     "new_install_prompt_erase": false,
     "builds": [
       {
-        "chipFamily": "ESP32s3",
+        "chipFamily": "ESP32-S3",
         "parts": [
           { "path": "https://norbert-walter.github.io/LoRa-Boat-Monitor/flash_tool/bootloader.bin", "offset": 4096 },
           { "path": "https://norbert-walter.github.io/LoRa-Boat-Monitor/flash_tool/partitions.bin", "offset": 32768 },
