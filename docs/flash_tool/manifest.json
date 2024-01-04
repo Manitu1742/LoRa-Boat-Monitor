@@ -4,12 +4,18 @@
     "new_install_prompt_erase": false,
     "builds": [
       {
-        "chipFamily": "ESP32-S3",
+        "chipFamily": "ESP32",
         "parts": [
           { "path": "https://norbert-walter.github.io/LoRa-Boat-Monitor/flash_tool/bootloader.bin", "offset": 4096 },
           { "path": "https://norbert-walter.github.io/LoRa-Boat-Monitor/flash_tool/partitions.bin", "offset": 32768 },
           { "path": "https://norbert-walter.github.io/LoRa-Boat-Monitor/flash_tool/firmware.bin", "offset": 65536 }
         ]
-      }
+      },
+      {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "https://manitu1742.github.io/LoRa-Boat-Monitor/docs/flash_tool//mergedfirmware.bin", "offset":0 }
+      ]
+    }  
     ]
   }
