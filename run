@@ -29,4 +29,4 @@ cp $projectpath/firmware.bin $toolpath/firmware.bin
 
 # Merge all bin files to one merge file
 echo "Merge all bin files"
-esptool.py --chip ESP32s3 merge_bin -o $toolpath/merged-firmware.bin --flash_mode dio --flash_size 4MB 0x1000 $toolpath/bootloader.bin 0x8000 $toolpath/partitions.bin 0x10000 $toolpath/firmware.bin
+esptool.py --chip ESP32s3 merge_bin -o $toolpath/merged-firmware.bin --flash_mode dio --flash_freq 80m --flash_size 8MB 0x1000 $toolpath/bootloader.bin 0x8000 $toolpath/partitions.bin 0x10000 $toolpath/firmware.bin
