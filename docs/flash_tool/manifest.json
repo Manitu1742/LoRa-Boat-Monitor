@@ -14,7 +14,7 @@
       {
       "chipFamily": "ESP32-S3",
       "parts": [
-        { "path": "https://manitu1742.github.io/LoRa-Boat-Monitor/docs/flash_tool//mergedfirmware.bin", "offset":0 }
+        { "path": "https://manitu1742.github.io/LoRa-Boat-Monitor/docs/flash_tool//merged-firmware.bin", "offset":0 }
       ]
     }  
     ]
