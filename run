@@ -10,7 +10,7 @@
 
 # Path definitions
 projectpath="./.pio/build/heltec_wifi_lora_32_V3"
-toolpath="./docs/flash_tool"
+toolpath="./docs/flash_tool/esp32v3"
 
 # Install tools
 echo "Installing tools"
@@ -19,7 +19,8 @@ pip3 install -platformio
 
 # Compile the firmware
 echo "Compiling Firmware"
-platformio run
+platformio run -t clean
+platformio run 
 
 # Copy all bin files in docs folder for online flash tool
 echo "Copy bin files"
