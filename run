@@ -20,7 +20,7 @@ pip3 install -platformio
 # Compile the firmware
 echo "Compiling Firmware"
 platformio run -t clean
-platformio run -v
+platformio run 
 
 # Copy all bin files in docs folder for online flash tool
 echo "Copy bin files"
