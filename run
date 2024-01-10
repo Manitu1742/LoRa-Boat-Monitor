@@ -20,7 +20,7 @@ pip3 install -platformio
 # Compile the firmware
 echo "Compiling Firmware"
 platformio run -t clean
-platformio run 
+platformio run -v
 
 # Copy all bin files in docs folder for online flash tool
 echo "Copy bin files"
@@ -30,4 +30,4 @@ cp $projectpath/firmware.bin $toolpath/firmware.bin
 
 # Merge all bin files to one merge file
 echo "Merge all bin files"
-esptool.py --chip ESP32s3 merge_bin -o $toolpath/merged-firmware.bin --flash_mode dio --flash_freq 80m --flash_size 8MB 0x1000 $toolpath/bootloader.bin 0x8000 $toolpath/partitions.bin 0x10000 $toolpath/firmware.bin
+esptool.py --chip esp32s3 merge_bin -o $toolpath/merged-firmware.bin --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 $toolpath/bootloader.bin 0x8000 $toolpath/partitions.bin 0x10000 $toolpath/firmware.bin
