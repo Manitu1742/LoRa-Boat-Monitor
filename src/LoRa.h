@@ -1,6 +1,8 @@
 #ifndef LoRa_h
 #define LoRa_h
 
+#undef RGB_BUILTIN
+
 // These callbacks are only used in over-the-air activation, so they are
 // left empty here (we cannot leave them out completely unless
 // DISABLE_JOIN is set in config.h, otherwise the linker will complain).
