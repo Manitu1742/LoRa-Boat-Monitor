@@ -87,7 +87,8 @@ String JSON()
     content += String(actconf.lchannel);
     content +=F( ",");
     content +=F( "\"ActualChannel\": ");
-    content += String(LMIC.txChnl);
+//    content += String(LMIC.txChnl);
+    content += String("");
     content +=F( ",");
     content +=F( "\"SpreadingFactor\": ");
     content += String(actconf.spreadf);

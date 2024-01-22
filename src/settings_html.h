@@ -101,7 +101,7 @@ String Settings(int num, String vname[31], String value[31])
     if (vname[i] == "lchannel") {
       actconf.lchannel = toInteger(value[i]);
       // Enable the used LoRa channels
-      setChannel(actconf.lchannel);
+//      setChannel(actconf.lchannel);
     }
     if (vname[i] == "dynsf") {
       actconf.dynsf = toInteger(value[i]);
@@ -109,7 +109,7 @@ String Settings(int num, String vname[31], String value[31])
     if (vname[i] == "spreadf") {
       actconf.spreadf = toInteger(value[i]);
       // Set spreading factor and dynamic SF
-      setSF(slot, actconf.spreadf, actconf.dynsf);
+//      setSF(slot, actconf.spreadf, actconf.dynsf);
     }
     if (vname[i] == "tinterval") {
       if(actconf.tinterval != toInteger(value[i])){

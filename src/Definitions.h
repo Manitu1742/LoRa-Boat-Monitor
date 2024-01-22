@@ -139,12 +139,12 @@ String gpsStatus = "";        // GPS status [A fix ok|V no fix]
 U8X8_SSD1306_128X64_NONAME_SW_I2C u8x8(15, 4, 16);         // Heltec ESP32 LoRa (V2) pin definitions
                                                            // Clock GPIO15, Data GPIO4, Reset GPIO16
 // Pin mapping for lmic LoRa chip SX1276
-const lmic_pinmap lmic_pins = {
-    .nss = 18,
-    .rxtx = LMIC_UNUSED_PIN,
-    .rst = 14,
-    .dio = {26, 34, 35},
-};
+// const lmic_pinmap lmic_pins = {
+//     .nss = 18,
+//     .rxtx = LMIC_UNUSED_PIN,
+//     .rst = 14,
+//     .dio = {26, 34, 35},
+// };
 
 // Payload arry;
 static uint8_t mydata[28];// 13 words + 1 word for array end
